@@ -1,11 +1,8 @@
 ﻿{
   "dependencies": {
-    "Microsoft.ApplicationInsights": "1.2.3",
-    "Microsoft.ApplicationInsights.PersistenceChannel": "1.2.3",
-    "Microsoft.ApplicationInsights.WindowsApps": "1.1.1",
+    "FluentAssertions": "4.2.2",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-    "MvvmLight": "5.2.0",
-    "WindowsAzure.Storage": "6.2.0"
+    "NUnit": "3.0.1"
   },
   "frameworks": {
     "uap10.0": {}
