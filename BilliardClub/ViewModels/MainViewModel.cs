@@ -1,12 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 namespace BilliardClub.ViewModel
 {
-    public class MainViewModel
+    public class MainViewModel : ViewModelBase
     {
+        public string Title { get; set; }
+
+        public RelayCommand ScoreKeeper { get; set; }
+
+        public MainViewModel()
+        {
+            Title = "Test";
+            ScoreKeeper = new RelayCommand(GoToScoreKeeper);
+        }
+
+        private void GoToScoreKeeper()
+        {
+            Title = "Changed";
+        }
     }
 }

@@ -1,12 +1,12 @@
 ﻿{
   "dependencies": {
-    "Microsoft.ApplicationInsights": "1.2.3",
+    "Microsoft.ApplicationInsights": "2.0.1",
     "Microsoft.ApplicationInsights.PersistenceChannel": "1.2.3",
     "Microsoft.ApplicationInsights.WindowsApps": "1.1.1",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
     "MvvmLight": "5.2.0",
-    "WindowsAzure.Storage": "6.2.0",
-    "XLabs.IoC.SimpleInjector": "2.0.5782"
+    "SimpleIoC": "0.1.4",
+    "WindowsAzure.Storage": "6.2.0"
   },
   "frameworks": {
     "uap10.0": {}
