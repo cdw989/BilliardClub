@@ -1,23 +1,25 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Views;
 
 namespace BilliardClub.ViewModel
 {
     public class MainViewModel : ViewModelBase
     {
-        public string Title { get; set; }
-
+        private NavigationService NavigationService = new NavigationService();
         public RelayCommand ScoreKeeper { get; set; }
+        public object Frame { get; private set; }
 
         public MainViewModel()
         {
-            Title = "Test";
+            NavigationService.Configure("ScoreKeeper", typeof(ScoreKeeper));
+
             ScoreKeeper = new RelayCommand(GoToScoreKeeper);
         }
 
         private void GoToScoreKeeper()
         {
-            Title = "Changed";
+            NavigationService.NavigateTo("ScoreKeeper");
         }
     }
 }

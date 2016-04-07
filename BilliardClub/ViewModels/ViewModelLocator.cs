@@ -22,13 +22,10 @@ namespace BilliardClub.ViewModels
             //SimpleIoc.Default.Register<IDataService, DataService>();
 
             SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<ScoreKeeperViewModel>();
         }
 
-        public MainViewModel Main { get { return SimpleIoc.Default.GetInstance<MainViewModel>(); } }        
-
-        //public MainViewModel Main
-        //{
-        //    get { return SimpleIoc.Default.GetInstance<MainViewModel>(); }
-        //}
+        public MainViewModel Main { get { return SimpleIoc.Default.GetInstance<MainViewModel>(); } }
+        public ScoreKeeperViewModel ScoreKeeper { get { return SimpleIoc.Default.GetInstance<ScoreKeeperViewModel>(); } }
     }
 }
